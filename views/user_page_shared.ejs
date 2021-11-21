@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/user_page.css">
+    <title><%=site%> : <%=title%></title>
+</head>
+<body>
+    
+    <%- include('partials/nav_bar') %>
+
+    <div id="container">
+         <div id="image-card-container">
+            <% row.forEach(image => { %>
+                <div class=image-card> 
+                    <div class="img-card-header">
+                        <p><%= image.NAME %></p> 
+                    </div>
+            
+                    <div class="img-container-container">
+                        <div class="img-container">
+                            <img class="img" src=<%= image.LINK %> alt="">
+                        </div>
+                    </div>
+
+                    <div class="image-card-button-container">
+                        <button class=btn-image onclick="window.location.href='<%= image.LINK %>'">
+                            <span>
+                                <svg width="100%" height="100%" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                    <path d="M5.5,10.293L0.854,5.646C0.658,5.451 0.342,5.451 0.146,5.646C-0.049,5.842 -0.049,6.158 0.146,6.354L5.646,11.854C5.842,12.049 6.158,12.049 6.354,11.854L11.854,6.354C12.049,6.158 12.049,5.842 11.854,5.646C11.658,5.451 11.342,5.451 11.146,5.646L6.5,10.293L6.5,0.5C6.5,0.224 6.276,-0 6,0C5.724,0 5.5,0.224 5.5,0.5L5.5,10.293Z"/>
+                                </svg>                                                       
+                            </span>
+                            Download
+                        </button>
+                    </div>
+
+                </div>
+            
+            <% }); %>
+        </div>
+
+    <script src="/dark_mode.js"></script>
+    <script>
+        var dropdown = document.querySelector('.dropdown')
+        var dropdown_menu = document.querySelector('.dropdown-menu')
+
+        dropdown.addEventListener('click', (e) => {
+            if(!e.target.matches('.dropdown')){
+                return
+            }
+            if(e.target.matches('#btn-sign-out')){
+                dropdown_menu.classList.toggle('active') 
+            }
+            dropdown_menu.classList.toggle('active')
+            console.log(e.target)
+             
+            dropdown.classList.toggle('active')
+        })
+
+        var img = document.getElementsByClassName('img')
+
+        Array.prototype.forEach.call(img, (element) => {
+            element.onload = () => {
+                element.style.display = 'block'
+
+                console.log(element.closest('.image-card'))
+
+                element.closest('.image-card').style.animation = 'none'
+            }
+        })
+    </script>
+</body>
+</html>
