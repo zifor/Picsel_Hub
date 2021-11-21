@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/user_page.css">
+    <title><%=site%> : <%=title%></title>
+</head>
+<body>
+    
+    <%- include('partials/nav_bar') %>
+
+    <script src="/dark_mode.js"></script>
+    <script>
+        var dropdown = document.querySelector('.dropdown')
+        var dropdown_menu = document.querySelector('.dropdown-menu')
+        
+        dropdown.addEventListener('click', (e) => {
+            if(!e.target.matches('.dropdown')){
+                return
+            }
+            if(e.target.matches('#btn-sign-out')){
+                dropdown_menu.classList.toggle('active') 
+            }
+            dropdown_menu.classList.toggle('active')
+            console.log(e.target)
+             
+            dropdown.classList.toggle('active')
+        })
+
+        var img = document.getElementsByClassName('img')
+
+        Array.prototype.forEach.call(img, (element) => {
+            element.onload = () => {
+                element.style.display = 'block'
+
+                console.log(element.closest('.image-card'))
+
+                element.closest('.image-card').style.animation = 'none'
+            }
+        })
+    </script>
+</body>
+</html>
