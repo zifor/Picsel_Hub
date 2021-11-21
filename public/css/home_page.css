@@ -1,0 +1,75 @@
+@import url(./root.css);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--background-body);
+}
+
+#nav-bar {
+  height: var(--height-nav-bar);
+  width: 100%;
+  background: var(--background-nav-bar);
+  -webkit-box-shadow: var(--shadow-nav-bar);
+          box-shadow: var(--shadow-nav-bar);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#nav-bar .head-nav-bar {
+  color: var(--color-header);
+  font-family: var(--font);
+  font-size: var(--font-size-header);
+  margin: 0 0 0 10px;
+}
+
+#container {
+  height: calc(100% - 50px);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-link {
+  height: 40px;
+  width: 125px;
+  border: none;
+  border-radius: var(--bdrs-input);
+  background: var(--background-btn-submit);
+  -webkit-box-shadow: var(--shadow-btn-submit);
+          box-shadow: var(--shadow-btn-submit);
+  color: var(--color-btn-submit);
+  font-size: 15px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.btn-link:hover {
+  background: var(--background-btn-submit-hover);
+}
+/*# sourceMappingURL=home_page.css.map */

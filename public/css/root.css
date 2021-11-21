@@ -1,0 +1,130 @@
+:root{
+    --height-nav-bar: 50px;
+    --height-search-bar-container: 60px;
+
+    --background-body: linear-gradient(to bottom, #e24800, #bd0058);
+    --background-body-user-page: rgb(235,235,235);
+    --background-nav-bar: rgba(255,255,255,1);
+    --background-form: rgba(255,255,255,1);
+    --background-form-header: rgba(245,245,245,1);
+    --background-image-card: rgb(215,215,215);
+    --background-image-container: linear-gradient(to right, 
+                            rgb(255,255,255) 0%, 
+                            rgb(200,200,200) 33%,
+                            rgb(185,185,185) 50%,
+                            rgb(200,200,200) 66%, 
+                            rgb(255,255,255) 100%);
+    --background-btn-submit: rgba(255,255,255,1);
+    --background-btn-submit-hover: rgb(28, 134, 255);
+    --background-txt-box: rgba(215,215,215,1);
+    --background-txt-box-focused: rgba(245,245,245,1);
+    --background-dropdown-hover: rgba(27, 5, 5, 0.1);
+    --background-dropdown-active: rgba(0,0,0,0.15);
+    --background-toggle-switch: rgb(215,215,215);
+    --background-toggle-switch-checked: rgb(255,255,255);
+    --background-toggle-switch-toggle: rgb(255,255,255);
+    --background-dropdown-item-hover: rgba(0,0,0,0.15);
+    --background-info: rgb(255,255,255,0.30);
+
+    --shadow-nav-bar: 0 2.5px 5px rgba(0,0,0,0.15);
+    --shadow-form: 0 5px 10px 0 rgba(0,0,0,0.15);
+    --shadow-btn-submit: 0 2.5px 5px 0 rgba(0,0,0,0.15);
+    --shadow-txt-box: 0 2.5px 5px 0 rgba(0,0,0,0.15);
+
+    --color-header: rgba(0,0,0,0.6);
+    --color-form-header: rgba(0,0,0,0.85);
+    --color-btn-submit: rgba(0,0,0,0.6);
+    --color-btn-submit-hover: rgba(255,255,255,1);
+    --color-label: rgba(0,0,0,0.85);
+    --color-placeholder: rgba(0,0,0,0.5);
+    --color-txt-box: rgba(0,0,0,0.85);
+    --color-link: rgba(0,0,0,1);
+    --color-p: rgba(0,0,0,0.5);
+    --color-drop-down-items: rgba(0,0,0,1);
+    --color-drop-down-user: rgba(0,0,0,0.85);
+    --color-drop-down-email: rgba(0,0,0,0.25);
+    --color-error: rgb(71, 37, 43);
+
+    --border-form: 1px solid rgba(0,0,0,0.25);
+    --border-form-header: 1px solid rgba(0,0,0,0.15);
+
+    --font-size-header: 18px;
+    --font-size-form-header: 20px;
+
+    --font: Helvetica;
+
+    --bdrs-form: 5px;
+    --bdrs-input: 3px;
+    --bdrs-drop-down: 5px;
+
+    --path-fill-logo: rgba(0,0,0,1);
+    --path-fill: rgba(0,0,0,0.6);
+    --path-fill-hover: rgba(0,0,0,1);
+    --path-fill-input: rgba(0,0,0,0.75);
+}
+
+.darkmode{
+    --height-nav-bar: 50px;
+    --height-search-bar-container: 60px;
+
+    --background-body: linear-gradient(to bottom, #e24800, #bd0058);
+    --background-body-user-page: rgb(35,35,35);
+    --background-nav-bar: rgba(15,15,15,1);
+    --background-form: rgba(15,15,15,1);
+    --background-form-header: rgba(10,10,10,1);
+    --background-image-card: rgb(20,20,20);
+    --background-image-container: linear-gradient(to right, 
+                            rgb(35,35,35) 0%, 
+                            rgb(50,50,50) 40%,
+                            rgb(55,55,55) 50%,
+                            rgb(50,50,50) 60%, 
+                            rgb(35,35,35) 100%);
+    --background-btn-submit: rgba(0,0,0,1);
+    --background-btn-submit-hover: rgb(0, 91, 196);
+    --background-txt-box: rgba(45,45,45,1);
+    --background-txt-box-focused: rgba(65,65,65,1);
+    --background-dropdown-hover: rgba(255,255,255,0.1);
+    --background-dropdown-active: rgba(255,255,255,0.15);
+    --background-toggle-switch: rgb(15,15,15);
+    --background-toggle-switch-checked: rgb(0, 97, 177);
+    --background-toggle-switch-toggle: rgb(25,25,25);
+    --background-dropdown-item-hover: rgba(255,255,255,0.15);
+    --background-info: rgb(0,0,0,0.30);
+
+
+    --shadow-nav-bar: 0 2.5px 5px rgba(0,0,0,0.35);
+    --shadow-form: 0 5px 10px 0 rgba(0,0,0,0.35);
+    --shadow-btn-submit: 0 2.5px 5px 0 rgba(0,0,0,0.35);
+    --shadow-txt-box: 0 2.5px 5px 0 rgba(0,0,0,0.35);
+
+    --color-header: rgba(255,255,255,0.85);
+    --color-form-header: rgba(255,255,255,0.85);
+    --color-btn-submit: rgba(255,255,255,0.6);
+    --color-btn-submit-hover: rgba(255,255,255,1);
+    --color-label: rgba(255,255,255,0.85);
+    --color-placeholder: rgba(255,255,255,0.5);
+    --color-txt-box: rgba(255,255,255,0.85);
+    --color-link: rgba(255,255,255,1);
+    --color-p: rgba(255,255,255,0.5);
+    --color-drop-down-items: rgb(255,255,255,1);
+    --color-drop-down-user: rgba(255,255,255,0.85);
+    --color-drop-down-email: rgba(255,255,255,0.25);
+    --color-error: rgb(255, 169, 184);
+
+    --border-form: 1px solid rgba(0,0,0,0.25);
+    --border-form-header: 1px solid rgba(0,0,0,0.5);
+
+    --font-size-header: 18px;
+    --font-size-form-header: 20px;
+
+    --font: Helvetica;
+
+    --bdrs-form: 5px;
+    --bdrs-input: 3px;
+    --bdrs-drop-down: 5px;
+
+    --path-fill-logo: rgba(255,255,255,1);
+    --path-fill: rgba(255,255,255,0.6);
+    --path-fill-hover: rgba(255,255,255,0.85);
+    --path-fill-input: rgba(255,255,255,0.75);
+}

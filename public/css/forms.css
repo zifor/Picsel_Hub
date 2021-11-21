@@ -1,0 +1,224 @@
+@import url(./root.css);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--background-body);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container {
+  width: 300px;
+  background: var(--background-form);
+  border-radius: var(--bdrs-form);
+  overflow: hidden;
+}
+
+#form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#form #head-form {
+  height: 40px;
+  width: 100%;
+  color: var(--color-form-header);
+  font-family: var(--font);
+  font-size: var(--font-size-form-header);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#form .message-container {
+  height: 30px;
+  width: calc(100% - 20px);
+  background: rgba(255, 38, 74, 0.35);
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0 0 0;
+}
+
+#form .message-container .message {
+  color: var(--color-error);
+  font-family: var(--font);
+  font-size: 15px;
+}
+
+#form .input-container {
+  position: relative;
+  width: calc(100% - 20px);
+  margin: 15px 0 0 0;
+}
+
+#form .input-container input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#form .input-container label {
+  height: 15px;
+  color: var(--color-label);
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#form .input-container .icon {
+  position: absolute;
+  top: 22.5px;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#form .input-container .icon svg {
+  height: 12px;
+  width: 12px;
+}
+
+#form .input-container .icon svg path {
+  fill: var(--path-fill-input);
+}
+
+#form .input-container .txt-box {
+  height: 30px;
+  width: 100%;
+  border-radius: var(--bdrs-input);
+  background: var(--background-txt-box);
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: var(--color-txt-box);
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 300;
+  text-indent: 35px;
+  margin: 5px 0 0 0;
+}
+
+#form .input-container .txt-box::-webkit-input-placeholder {
+  color: var(--color-placeholder);
+  font-family: var(--font);
+  letter-spacing: normal;
+}
+
+#form .input-container .txt-box:-ms-input-placeholder {
+  color: var(--color-placeholder);
+  font-family: var(--font);
+  letter-spacing: normal;
+}
+
+#form .input-container .txt-box::-ms-input-placeholder {
+  color: var(--color-placeholder);
+  font-family: var(--font);
+  letter-spacing: normal;
+}
+
+#form .input-container .txt-box::placeholder {
+  color: var(--color-placeholder);
+  font-family: var(--font);
+  letter-spacing: normal;
+}
+
+#form .input-container .txt-box:focus, #form .input-container .txt-box:valid {
+  background: var(--background-txt-box-focused);
+}
+
+#form .input-container .txt-box[type='password'] {
+  font-family: caption;
+  letter-spacing: 3px;
+}
+
+#form .input-container .btn-submit {
+  height: 35px;
+  width: 100%;
+  border-radius: var(--bdrs-input);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: var(--background-btn-submit);
+  color: var(--color-btn-submit);
+  font-family: var(--font);
+  font-size: 15px;
+  margin: 5px 0 0 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#form .input-container .btn-submit:hover {
+  background: var(--background-btn-submit-hover);
+  color: var(--color-btn-submit-hover);
+  border: 1px solid transparent;
+}
+
+#form .link {
+  color: var(--color-p);
+  font-family: var(--font);
+  font-size: 15px;
+  margin: 15px 0 15px 0;
+}
+
+#form .link a {
+  color: var(--color-link);
+  font-family: var(--font);
+  font-size: 15px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=forms.css.map */
