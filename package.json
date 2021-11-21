@@ -1,0 +1,33 @@
+{
+  "name": "picsel-hub",
+  "version": "1.0.0",
+  "description": "Website for storing images",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "author": "Louis van der Nest 31661777",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "googleapis": "^91.0.0",
+    "mongoose": "^6.0.12",
+    "multer": "^1.4.3",
+    "mysql": "^2.18.1",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
