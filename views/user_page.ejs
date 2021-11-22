@@ -209,6 +209,14 @@
                 element.closest('.image-card').style.animation = 'none'
             }
         })
+
+        var f_input = document.querySelector('#file-input')
+
+        f_input.addEventListener('change', (e) => {
+            var f_name = document.querySelector('.file-name')
+
+            f_name.innerHTML = f_input.value.split( '\\' ).pop()
+        })
     </script>
 </body>
 </html>

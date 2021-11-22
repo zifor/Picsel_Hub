@@ -443,7 +443,7 @@ body{
                 }
 
                 .file-upload{
-                    height: 35px;
+                    height: 30px;
                     width: 100%;
                     display: flex;
 
@@ -455,6 +455,7 @@ body{
                         background: var(--background-txt-box);
                         color: var(--color-btn-submit);
                         font-family: var(--font);
+                        font-size: 15px;
                         border-radius: 3px 0 0 3px;
                         text-indent: 5px;
 
@@ -462,11 +463,13 @@ body{
 
                         display: flex;
                         align-items: center;
+
+                        overflow: hidden;
                     }
 
                     .btn-browse{
                         height: 100%;
-                        width: 75px;
+                        width: 95px;
 
                         border-radius: 0 3px 3px 0;
                         border: 1px solid rgba(0,0,0,0.15);
@@ -476,6 +479,7 @@ body{
                         font-size: 15px;
                         transition: all 0.3s ease;
                         box-sizing: border-box;
+                        font-weight: normal;
 
                         margin: 15px 0 0 0;
 
