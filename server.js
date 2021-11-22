@@ -16,6 +16,7 @@ const app                       = express()
 const favicon                   = require('serve-favicon')
 
 const site_name = 'Picsel Hub'
+const port = process.env.PORT || 3001
 
 // Database Connection
 const db = mysql.createConnection({
@@ -493,8 +494,8 @@ app.post('/u/share/:id', async (req,res) => {
 })
 
 // LISTENING TO PORT
-app.listen('3001',() => {
-    console.log('Server 3001')
+app.listen(port,() => {
+    console.log(`Server running on port : ${port}`)
 })
 
 // Functions
